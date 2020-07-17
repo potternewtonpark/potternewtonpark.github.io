@@ -1,0 +1,163 @@
+@import "variables";
+@import "mixins";
+
+body {
+  background-color: #fff;
+  font-family: $font-family;
+  word-wrap: break-word;
+  color: $font-colour;
+  line-height: 1.6;
+  font-size: $font-body-size;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $brand-primary;
+  font-family: $font-heading;
+  line-height: 1.2;
+  padding-bottom: 0.7rem;
+  margin-bottom: 0;
+  a {
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      color: darken($brand-primary, 20%);
+    }
+  }
+}
+
+a {
+  color: $brand-primary;
+  &:hover,
+  &:focus {
+    color: darken($brand-primary, 20%);
+  }
+}
+
+h1 {
+  font-size: $font-h1;
+}
+
+h2 {
+  font-size: $font-h2;
+}
+
+h3 {
+  font-size: $font-h3;
+}
+
+h4 {
+  font-size: $font-h4;
+}
+
+h5 {
+  font-size: $font-h5;
+}
+
+h6 {
+  font-size: $font-h6;
+}
+
+p,
+ul {
+  padding-bottom: 0.7rem;
+}
+
+img {
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+iframe {
+  padding: 0 2rem;
+  max-width: 100%;
+}
+
+header {
+  p {
+    font-size: 2rem;
+    color: $brand-primary;
+    font-family: $font-heading;
+    padding: 1rem 0 0 0;
+    line-height: 1;
+  }
+}
+
+#maincontent ul {
+  padding: 0 0 1rem 2rem;
+  list-style-position: outside;
+  li {
+    padding-left: 0.3rem;
+  }
+}
+
+.container {
+  padding: 0 0.5rem;
+}
+
+.clear {
+  clear: both;
+}
+
+.event {
+  border: 1px solid $brand-primary;
+  border-radius: 10px;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  margin-bottom: 1rem;
+  background-color: lighten($brand-primary, 63%);
+}
+
+.social {
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 1rem;
+  img {
+    width: 36px;
+    height: auto;
+    margin-right: 0.5rem;
+    float: left;
+  }
+  p {
+    vertical-align: middle;
+    font-size: 1.1rem;
+    text-decoration: none;
+    float: left;
+    padding-top: 0.4rem;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+.email {
+  font-size: 1.1rem;
+  a {
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
+
+footer {
+  background-color: $brand-primary;
+  color: #fff;
+  padding: 1rem 0;
+  p {
+    font-size: 0.8rem;
+  }
+  a {
+    color: lighten($brand-primary, 50%);
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+}
