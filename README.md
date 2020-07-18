@@ -6,7 +6,7 @@ Run `npm install` to install node modules.
 
 ## Commands
 
-`grunt browserStac` starts the server on http://localhost:3000.
+`grunt browserSync` starts the server on http://localhost:3000.
 
 `grunt watch` watches for changes in SCSS files and compiles them to CSS.
 
