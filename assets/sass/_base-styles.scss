@@ -10,6 +10,10 @@ body {
   font-size: $font-body-size;
 }
 
+/*
+* Typography
+*/
+
 h1,
 h2,
 h3,
@@ -19,8 +23,8 @@ h6 {
   color: $brand-primary;
   font-family: $font-heading;
   line-height: 1.2;
-  padding-bottom: 0.7rem;
-  margin-bottom: 0;
+  padding: 0 0 0.7rem 0;
+  margin: 0;
   a {
     text-decoration: none;
     &:hover,
@@ -67,6 +71,14 @@ ul {
   padding-bottom: 0.7rem;
 }
 
+#maincontent ul {
+  padding: 0 0 1rem 2rem;
+  list-style-position: outside;
+  li {
+    padding-left: 0.3rem;
+  }
+}
+
 img {
   max-width: 100%;
   margin-bottom: 1rem;
@@ -77,26 +89,34 @@ iframe {
   max-width: 100%;
 }
 
-header {
+/*
+* Banner
+*/
+
+#banner {
+  @extend %clearfix;
+  padding: 1rem 0 0.5rem 0;
+  //height: 200px;
+  a {
+    //display: table;
+    float: left;
+    margin: 0 1rem 0 0;
+    img {
+      width: 50px;
+      height: auto;
+      margin: 0;
+    }
+  }
   p {
-    font-size: 2rem;
+    font-size: 1.4rem;
     color: $brand-primary;
     font-family: $font-heading;
-    padding: 1rem 0 0 0;
     line-height: 1;
   }
 }
 
-#maincontent ul {
-  padding: 0 0 1rem 2rem;
-  list-style-position: outside;
-  li {
-    padding-left: 0.3rem;
-  }
-}
-
 .container {
-  padding: 0 0.5rem;
+  padding: 0 0.8rem;
 }
 
 .clear {
@@ -144,6 +164,10 @@ header {
     }
   }
 }
+
+/*
+* Footer
+*/
 
 footer {
   background-color: $brand-primary;

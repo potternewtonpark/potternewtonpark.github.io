@@ -9,10 +9,6 @@
   @extend %border-box;
 }
 
-#maincontent {
-  padding: 0 0.5rem;
-}
-
 section,
 footer {
   @extend %clearfix;
@@ -20,7 +16,6 @@ footer {
 
 section {
   clear: both;
-  padding: 1rem 0;
 }
 
 .fullwidth {
@@ -33,15 +28,23 @@ section {
 }
 
 @media all and (min-width: $screen-sm) {
-  header {
-    padding: 0;
+  section {
+    margin-bottom: 0.5rem;
+  }
+  #banner {
+    a {
+      img {
+        width: 100px;
+      }
+    }
     p {
-      font-size: 3rem;
+      font-size: 2rem;
+      padding-top: 2.7rem;
     }
   }
 
   #maincontent {
-    padding: 0;
+    padding: 0 0 1rem 0;
   }
 
   .container {
@@ -94,12 +97,17 @@ section {
   iframe {
     padding: 0;
   }
-
   .footer-info {
     float: left;
   }
   .footer-credit {
     float: right;
+  }
+}
+
+@media all and (min-width: 480px) and (max-width: $screen-sm) {
+  #banner p {
+    padding-top: 1.3rem;
   }
 }
 
